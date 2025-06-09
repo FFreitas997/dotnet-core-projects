@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\nzwalksapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\nzwalksapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NZWalksAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-09T17:10:59.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NZWalksAPI",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\NZWalksAPI.csproj",
+              "RelativeDocumentMoniker": "NZWalksAPI\\NZWalksAPI.csproj",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\NZWalksAPI.csproj",
+              "RelativeToolTip": "NZWalksAPI\\NZWalksAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-09T17:10:11.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "NZWalksAPI\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:06:01.432Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
