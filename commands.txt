@@ -1,0 +1,5 @@
+Commands:
+
+- Add-Migration "Init Migration"
+- Remove-Migration
+- Update-Database
