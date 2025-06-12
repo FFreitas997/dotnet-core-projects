@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NZWalksAPI.Data;
+using NZWalksAPI.Services.Implementations;
+using NZWalksAPI.Services.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString"))
 );
+
+builder.Services.AddScoped<IRegionService, RegionService>();
 
 var app = builder.Build();
 

@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\services\\interface\\iregionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\services\\interface\\iregionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\services\\implementations\\regionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\services\\implementations\\regionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\models\\dtos\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\models\\dtos\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\services\\interface\\iregionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\services\\interface\\iregionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\models\\entities\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\models\\entities\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\models\\dtos\\updateregionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\models\\dtos\\updateregionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Region.cs",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\Entities\\Region.cs",
               "RelativeDocumentMoniker": "NZWalksAPI\\Models\\Entities\\Region.cs",
@@ -46,46 +46,20 @@
               "RelativeToolTip": "NZWalksAPI\\Models\\Entities\\Region.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T16:48:10.542Z",
+              "WhenOpened": "2025-06-12T10:56:11.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegionDto.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\DTOs\\RegionDto.cs",
-              "RelativeDocumentMoniker": "NZWalksAPI\\Models\\DTOs\\RegionDto.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\DTOs\\RegionDto.cs",
-              "RelativeToolTip": "NZWalksAPI\\Models\\DTOs\\RegionDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UpdateRegionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\DTOs\\UpdateRegionRequest.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Models\\DTOs\\UpdateRegionRequest.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\DTOs\\UpdateRegionRequest.cs",
+              "RelativeToolTip": "NZWalksAPI\\Models\\DTOs\\UpdateRegionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T16:47:01.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IRegionService.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Interface\\IRegionService.cs",
-              "RelativeDocumentMoniker": "NZWalksAPI\\Services\\Interface\\IRegionService.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Interface\\IRegionService.cs",
-              "RelativeToolTip": "NZWalksAPI\\Services\\Interface\\IRegionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T16:26:56.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegionService.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\RegionService.cs",
-              "RelativeDocumentMoniker": "NZWalksAPI\\Services\\Implementations\\RegionService.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\RegionService.cs",
-              "RelativeToolTip": "NZWalksAPI\\Services\\Implementations\\RegionService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA9wCMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T16:26:29.337Z",
+              "WhenOpened": "2025-06-12T10:56:06.951Z",
               "EditorCaption": ""
             },
             {
@@ -96,9 +70,35 @@
               "RelativeDocumentMoniker": "NZWalksAPI\\Controllers\\RegionsController.cs",
               "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Controllers\\RegionsController.cs",
               "RelativeToolTip": "NZWalksAPI\\Controllers\\RegionsController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwCYAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAIBAwEIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T16:14:04.299Z",
+              "WhenOpened": "2025-06-12T10:51:28.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegionService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "RelativeToolTip": "NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAcwIgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:50:48.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRegionService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Interface\\IRegionService.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Services\\Interface\\IRegionService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Interface\\IRegionService.cs",
+              "RelativeToolTip": "NZWalksAPI\\Services\\Interface\\IRegionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:50:47.247Z",
               "EditorCaption": ""
             }
           ]
