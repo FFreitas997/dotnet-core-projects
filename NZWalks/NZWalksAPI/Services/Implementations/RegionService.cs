@@ -1,40 +1,46 @@
-﻿using Microsoft.EntityFrameworkCore;
-using NZWalksAPI.Data;
+﻿using NZWalksAPI.Exceptions;
 using NZWalksAPI.Models.DTOs;
 using NZWalksAPI.Models.Entities;
+using NZWalksAPI.Repositories.Interface;
 using NZWalksAPI.Services.Interface;
 
 namespace NZWalksAPI.Services.Implementations;
 
-public class RegionService(ApplicationDbContext dbContext) : IRegionService
+public class RegionService(IRegionRepository repository, ILogger<RegionService> logger) : IRegionService
 {
     public async Task<List<RegionDto>> GetAllRegionsAsync()
     {
-        var regions = await dbContext.Regions.ToListAsync();
-
-        if (regions == null)
-            throw new Exception("Something went wrong with the list of regions");
+        // Fetch all regions from the repository
+        var regions = await repository.GetAllAsync();
 
         // Convert to DTOs
-        var response = regions
-            .Select(region => new RegionDto
-            {
-                Id = region.Id,
-                Name = region.Name,
-                Code = region.Code,
-                ImageUrl = region.ImageUrl
-            })
-            .ToList();
+        var response = regions.Select(region => new RegionDto
+        {
+            Id = region.Id,
+            Name = region.Name,
+            Code = region.Code,
+            ImageUrl = region.ImageUrl
+        }).ToList();
 
         return response;
     }
 
     public async Task<RegionDto> GetRegionByIdAsync(Guid id)
     {
-        var region = await dbContext.Regions.FirstOrDefaultAsync(r => r.Id == id);
+        if (id == Guid.Empty)
+        {
+            logger.LogError("Invalid region ID provided: {Guid}", id);
+            throw new BadRequestException($"Invalid region with ID provided: {id}");
+        }
+
+        // Fetch the region by ID from the repository
+        var region = await repository.GetByIdAsync(id);
 
         if (region == null)
-            throw new Exception($"Region with ID {id} not found");
+        {
+            logger.LogError("Region with ID {Guid} not found", id);
+            throw new NotFoundException($"Region with ID {id} not found");
+        }
 
         // Convert to DTO
         var response = new RegionDto
@@ -50,15 +56,25 @@ public class RegionService(ApplicationDbContext dbContext) : IRegionService
 
     public async Task<RegionDto> CreateRegionAsync(CreateRegionRequestDto request)
     {
-        if (request == null)
-            throw new ArgumentNullException(nameof(request), "Region cannot be null");
-
         // Validate required fields
         if (string.IsNullOrWhiteSpace(request.Name))
-            throw new ArgumentException("Region name is required", nameof(request.Name));
+        {
+            logger.LogError("Region name is required");
+            throw new ValidationException("Region name is required");
+        }
 
         if (string.IsNullOrWhiteSpace(request.Code))
-            throw new ArgumentException("Region code is required", nameof(request.Code));
+        {
+            logger.LogError("Region code is required");
+            throw new ValidationException("Region code is required");
+        }
+
+        if (!string.IsNullOrWhiteSpace(request.ImageUrl) &&
+            !Uri.IsWellFormedUriString(request.ImageUrl, UriKind.Absolute))
+        {
+            logger.LogError("Invalid image URL provided: {ImageUrl}", request.ImageUrl);
+            throw new ValidationException("Invalid image URL provided");
+        }
 
         // Create new Region entity
         var newRegion = new Region
@@ -71,8 +87,8 @@ public class RegionService(ApplicationDbContext dbContext) : IRegionService
             UpdatedAt = DateTime.UtcNow
         };
 
-        await dbContext.Regions.AddAsync(newRegion);
-        await dbContext.SaveChangesAsync();
+        // Add the new region to the repository
+        newRegion = await repository.CreateAsync(newRegion);
 
         // Convert to DTO
         var response = new RegionDto
@@ -88,20 +104,39 @@ public class RegionService(ApplicationDbContext dbContext) : IRegionService
 
     public async Task<RegionDto> UpdateRegionAsync(Guid id, UpdateRegionRequest request)
     {
-        if (request == null)
-            throw new ArgumentNullException(nameof(request), "Region cannot be null");
+        if (id == Guid.Empty)
+        {
+            logger.LogError("Invalid region ID provided: {Guid}", id);
+            throw new BadRequestException($"Invalid region with ID provided: {id}");
+        }
 
         // Validate required fields
         if (string.IsNullOrWhiteSpace(request.Name))
-            throw new ArgumentException("Region name is required", nameof(request.Name));
+        {
+            logger.LogError("Region name is required");
+            throw new ValidationException("Region name is required");
+        }
 
         if (string.IsNullOrWhiteSpace(request.Code))
-            throw new ArgumentException("Region code is required", nameof(request.Code));
+        {
+            logger.LogError("Region code is required");
+            throw new ValidationException("Region code is required");
+        }
 
-        var region = await dbContext.Regions.FirstOrDefaultAsync(r => r.Id == id);
+        if (!string.IsNullOrWhiteSpace(request.ImageUrl) &&
+            !Uri.IsWellFormedUriString(request.ImageUrl, UriKind.Absolute))
+        {
+            logger.LogError("Invalid image URL provided: {ImageUrl}", request.ImageUrl);
+            throw new ValidationException("Invalid image URL provided");
+        }
+
+        var region = await repository.GetByIdAsync(id);
 
         if (region == null)
-            throw new Exception($"Region with ID {id} not found");
+        {
+            logger.LogError("Region with ID {Guid} not found", id);
+            throw new NotFoundException($"Region with ID {id} not found");
+        }
 
         // Update properties
         region.Name = request.Name;
@@ -109,8 +144,8 @@ public class RegionService(ApplicationDbContext dbContext) : IRegionService
         region.ImageUrl = request.ImageUrl;
         region.UpdatedAt = DateTime.UtcNow;
 
-        dbContext.Regions.Update(region);
-        await dbContext.SaveChangesAsync();
+        // Save changes to the repository
+        region = await repository.UpdateAsync(region);
 
         // Convert to DTO
         var response = new RegionDto
@@ -127,14 +162,20 @@ public class RegionService(ApplicationDbContext dbContext) : IRegionService
     public async Task DeleteRegionAsync(Guid id)
     {
         if (id == Guid.Empty)
-            throw new ArgumentException("Invalid region ID", nameof(id));
+        {
+            logger.LogError("Invalid region ID provided: {Guid}", id);
+            throw new BadRequestException($"Invalid region with ID provided: {id}");
+        }
 
-        var region = await dbContext.Regions.FirstOrDefaultAsync(r => r.Id == id);
+        var region = await repository.GetByIdAsync(id);
 
         if (region == null)
-            throw new Exception($"Region with ID {id} not found");
+        {
+            logger.LogError("Region with ID {Guid} not found", id);
+            throw new NotFoundException($"Region with ID {id} not found");
+        }
 
-        dbContext.Regions.Remove(region);
-        await dbContext.SaveChangesAsync();
+        // Delete the region from the repository
+        await repository.DeleteAsync(region);
     }
 }

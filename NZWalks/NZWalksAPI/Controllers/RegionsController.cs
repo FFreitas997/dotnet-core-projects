@@ -9,72 +9,54 @@ namespace NZWalksAPI.Controllers;
 public class RegionsController(ILogger<RegionsController> logger, IRegionService regionService) : ControllerBase
 {
     [HttpGet]
-    public IActionResult AllRegionsRequest()
+    public async Task<IActionResult> AllRegionsRequest()
     {
-        logger.LogInformation("Fetching all regions");
+        logger.LogInformation("Requesting all regions");
 
-        var regions = regionService.GetAllRegionsAsync().Result;
+        var regions = await regionService.GetAllRegionsAsync();
 
         return Ok(regions);
     }
 
     [HttpGet]
     [Route("{id:guid}")]
-    public IActionResult GetRegionById([FromRoute] Guid id)
+    public async Task<IActionResult> GetRegionById([FromRoute] Guid id)
     {
-        logger.LogInformation("Fetching region with ID: {Guid}", id);
+        logger.LogInformation("Requesting region with ID: {Guid}", id);
 
-        var region = regionService.GetRegionByIdAsync(id).Result;
+        var region = await regionService.GetRegionByIdAsync(id);
 
         return Ok(region);
     }
 
     [HttpPost]
-    public IActionResult CreateRegion([FromBody] CreateRegionRequestDto request)
+    public async Task<IActionResult> CreateRegion([FromBody] CreateRegionRequestDto request)
     {
         logger.LogInformation("Creating new region: {string}", request.Name);
 
-        var region = regionService.CreateRegionAsync(request).Result;
+        var region = await regionService.CreateRegionAsync(request);
 
         return CreatedAtAction(nameof(GetRegionById), new { id = region.Id }, region);
     }
 
     [HttpPut]
     [Route("{id:guid}")]
-    public IActionResult UpdateRegion([FromRoute] Guid id, [FromBody] UpdateRegionRequest request)
+    public async Task<IActionResult> UpdateRegion([FromRoute] Guid id, [FromBody] UpdateRegionRequest request)
     {
-        if (id == Guid.Empty)
-        {
-            logger.LogError("Invalid region ID provided: {Guid}", id);
-            return BadRequest("Invalid region ID.");
-        }
-
-        if (request == null)
-        {
-            logger.LogError("Update request is null for region ID: {Guid}", id);
-            return BadRequest("Update request cannot be null.");
-        }
-
         logger.LogInformation("Updating region with ID: {Guid}", id);
 
-        var region = regionService.UpdateRegionAsync(id, request).Result;
+        var region = await regionService.UpdateRegionAsync(id, request);
 
         return Ok(region);
     }
 
     [HttpDelete]
     [Route("{id:guid}")]
-    public IActionResult DeleteRegion([FromRoute] Guid id)
+    public async Task<IActionResult> DeleteRegion([FromRoute] Guid id)
     {
-        if (id == Guid.Empty)
-        {
-            logger.LogError("Invalid region ID provided: {Guid}", id);
-            return BadRequest("Invalid region ID.");
-        }
-
         logger.LogInformation("Deleting region with ID: {Guid}", id);
 
-        regionService.DeleteRegionAsync(id).Wait();
+        await regionService.DeleteRegionAsync(id);
 
         return NoContent();
     }
