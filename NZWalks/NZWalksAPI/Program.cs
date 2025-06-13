@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NZWalksAPI.Data;
+using NZWalksAPI.Mappings;
 using NZWalksAPI.Middlewares;
 using NZWalksAPI.Repositories.Implementations;
 using NZWalksAPI.Repositories.Interface;
@@ -19,9 +20,16 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString"))
 );
 
-// Register repositories and services
+// Register services
 builder.Services.AddScoped<IRegionService, RegionService>();
+builder.Services.AddScoped<IWalkService, WalkService>();
+
+// Register repositories
 builder.Services.AddScoped<IRegionRepository, RegionRepositorySql>();
+builder.Services.AddScoped<IWalkRepository, WalkRepository>();
+
+// AutoMapper configuration
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();
 
@@ -36,9 +44,12 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
-
-app.Run();
-
 // Add Middleware for global exception handling
 app.UseMiddleware<ExceptionMiddleware>();
+
+app.MapControllers();
+
+// Seed the database with initial data
+await DbSeeder.SeedDifficultiesAsync(app.Services);
+
+app.Run();

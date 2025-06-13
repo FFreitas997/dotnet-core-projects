@@ -1,4 +1,5 @@
-﻿using NZWalksAPI.Exceptions;
+﻿using AutoMapper;
+using NZWalksAPI.Exceptions;
 using NZWalksAPI.Models.DTOs;
 using NZWalksAPI.Models.Entities;
 using NZWalksAPI.Repositories.Interface;
@@ -6,23 +7,13 @@ using NZWalksAPI.Services.Interface;
 
 namespace NZWalksAPI.Services.Implementations;
 
-public class RegionService(IRegionRepository repository, ILogger<RegionService> logger) : IRegionService
+public class RegionService(IRegionRepository repository, ILogger<RegionService> logger, IMapper mapper) : IRegionService
 {
     public async Task<List<RegionDto>> GetAllRegionsAsync()
     {
-        // Fetch all regions from the repository
         var regions = await repository.GetAllAsync();
 
-        // Convert to DTOs
-        var response = regions.Select(region => new RegionDto
-        {
-            Id = region.Id,
-            Name = region.Name,
-            Code = region.Code,
-            ImageUrl = region.ImageUrl
-        }).ToList();
-
-        return response;
+        return mapper.Map<List<RegionDto>>(regions);
     }
 
     public async Task<RegionDto> GetRegionByIdAsync(Guid id)
@@ -42,16 +33,7 @@ public class RegionService(IRegionRepository repository, ILogger<RegionService> 
             throw new NotFoundException($"Region with ID {id} not found");
         }
 
-        // Convert to DTO
-        var response = new RegionDto
-        {
-            Id = region.Id,
-            Name = region.Name,
-            Code = region.Code,
-            ImageUrl = region.ImageUrl
-        };
-
-        return response;
+        return mapper.Map<RegionDto>(region);
     }
 
     public async Task<RegionDto> CreateRegionAsync(CreateRegionRequestDto request)
@@ -77,29 +59,13 @@ public class RegionService(IRegionRepository repository, ILogger<RegionService> 
         }
 
         // Create new Region entity
-        var newRegion = new Region
-        {
-            Id = Guid.NewGuid(),
-            Name = request.Name,
-            Code = request.Code,
-            ImageUrl = request.ImageUrl,
-            CreatedAt = DateTime.UtcNow,
-            UpdatedAt = DateTime.UtcNow
-        };
+        var newRegion = mapper.Map<Region>(request);
 
         // Add the new region to the repository
         newRegion = await repository.CreateAsync(newRegion);
 
         // Convert to DTO
-        var response = new RegionDto
-        {
-            Id = newRegion.Id,
-            Name = newRegion.Name,
-            Code = newRegion.Code,
-            ImageUrl = newRegion.ImageUrl
-        };
-
-        return response;
+        return mapper.Map<RegionDto>(newRegion);
     }
 
     public async Task<RegionDto> UpdateRegionAsync(Guid id, UpdateRegionRequest request)
@@ -138,25 +104,16 @@ public class RegionService(IRegionRepository repository, ILogger<RegionService> 
             throw new NotFoundException($"Region with ID {id} not found");
         }
 
-        // Update properties
+        // Update the region properties
         region.Name = request.Name;
         region.Code = request.Code;
-        region.ImageUrl = request.ImageUrl;
-        region.UpdatedAt = DateTime.UtcNow;
+        region.ImageUrl = request.ImageUrl ?? region.ImageUrl; // Keep existing image URL if not provided
+        region.UpdatedAt = DateTime.UtcNow; // Update the timestamp
 
         // Save changes to the repository
         region = await repository.UpdateAsync(region);
 
-        // Convert to DTO
-        var response = new RegionDto
-        {
-            Id = region.Id,
-            Name = region.Name,
-            Code = region.Code,
-            ImageUrl = region.ImageUrl
-        };
-
-        return response;
+        return mapper.Map<RegionDto>(region);
     }
 
     public async Task DeleteRegionAsync(Guid id)

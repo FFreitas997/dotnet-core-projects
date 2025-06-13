@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NZWalksAPI.CustomActionFilters;
 using NZWalksAPI.Models.DTOs;
 using NZWalksAPI.Services.Interface;
 
@@ -30,6 +31,7 @@ public class RegionsController(ILogger<RegionsController> logger, IRegionService
     }
 
     [HttpPost]
+    [ValidateModel]
     public async Task<IActionResult> CreateRegion([FromBody] CreateRegionRequestDto request)
     {
         logger.LogInformation("Creating new region: {string}", request.Name);
@@ -41,6 +43,7 @@ public class RegionsController(ILogger<RegionsController> logger, IRegionService
 
     [HttpPut]
     [Route("{id:guid}")]
+    [ValidateModel]
     public async Task<IActionResult> UpdateRegion([FromRoute] Guid id, [FromBody] UpdateRegionRequest request)
     {
         logger.LogInformation("Updating region with ID: {Guid}", id);
