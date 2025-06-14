@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NZWalksAPI.CustomActionFilters;
 using NZWalksAPI.Models.DTOs;
 using NZWalksAPI.Services.Interface;
@@ -10,6 +11,7 @@ namespace NZWalksAPI.Controllers;
 public class RegionsController(ILogger<RegionsController> logger, IRegionService regionService) : ControllerBase
 {
     [HttpGet]
+    [Authorize(Roles = "Reader")]
     public async Task<IActionResult> AllRegionsRequest()
     {
         logger.LogInformation("Requesting all regions");
@@ -21,6 +23,7 @@ public class RegionsController(ILogger<RegionsController> logger, IRegionService
 
     [HttpGet]
     [Route("{id:guid}")]
+    [Authorize(Roles = "Reader")]
     public async Task<IActionResult> GetRegionById([FromRoute] Guid id)
     {
         logger.LogInformation("Requesting region with ID: {Guid}", id);
@@ -32,6 +35,7 @@ public class RegionsController(ILogger<RegionsController> logger, IRegionService
 
     [HttpPost]
     [ValidateModel]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> CreateRegion([FromBody] CreateRegionRequestDto request)
     {
         logger.LogInformation("Creating new region: {string}", request.Name);
@@ -44,6 +48,7 @@ public class RegionsController(ILogger<RegionsController> logger, IRegionService
     [HttpPut]
     [Route("{id:guid}")]
     [ValidateModel]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> UpdateRegion([FromRoute] Guid id, [FromBody] UpdateRegionRequest request)
     {
         logger.LogInformation("Updating region with ID: {Guid}", id);
@@ -55,6 +60,7 @@ public class RegionsController(ILogger<RegionsController> logger, IRegionService
 
     [HttpDelete]
     [Route("{id:guid}")]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> DeleteRegion([FromRoute] Guid id)
     {
         logger.LogInformation("Deleting region with ID: {Guid}", id);

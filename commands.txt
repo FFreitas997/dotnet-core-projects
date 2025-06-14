@@ -1,5 +1,5 @@
 Commands:
 
-- Add-Migration "Init Migration"
-- Remove-Migration
-- Update-Database
+- Add-Migration "Init Migration" -Context "ApplicationAuthDbContext"
+- Remove-Migration -Context "ApplicationAuthDbContext"
+- Update-Database -Context "ApplicationAuthDbContext"

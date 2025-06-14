@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NZWalksAPI.CustomActionFilters;
 using NZWalksAPI.Models.DTOs;
 using NZWalksAPI.Services.Interface;
@@ -9,9 +10,11 @@ namespace NZWalksAPI.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class WalksController(ILogger<RegionsController> logger, IWalkService service) : ControllerBase
 {
     [HttpGet]
+    [Authorize(Roles = "Reader")]
     public async Task<IActionResult> Get(
         [FromQuery] string? name,
         [FromQuery] string? sortBy,
@@ -29,6 +32,7 @@ public class WalksController(ILogger<RegionsController> logger, IWalkService ser
 
     [HttpGet]
     [Route("{id:guid}")]
+    [Authorize(Roles = "Reader")]
     public async Task<IActionResult> Get([FromRoute] Guid id)
     {
         logger.LogInformation("Requesting walk with ID: {Guid}", id);
@@ -40,6 +44,7 @@ public class WalksController(ILogger<RegionsController> logger, IWalkService ser
 
     [HttpPost]
     [ValidateModel]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> Post([FromBody] CreateWalkRequestDto request)
     {
         logger.LogInformation("Creating new walk: {string}", request.Name);
@@ -52,6 +57,7 @@ public class WalksController(ILogger<RegionsController> logger, IWalkService ser
     [HttpPut]
     [Route("{id:guid}")]
     [ValidateModel]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> Put([FromRoute] Guid id, [FromBody] UpdateWalkRequest request)
     {
         logger.LogInformation("Updating walk with ID: {Guid}", id);
@@ -63,6 +69,7 @@ public class WalksController(ILogger<RegionsController> logger, IWalkService ser
 
     [HttpDelete]
     [Route("{id:guid}")]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> Delete([FromRoute] Guid id)
     {
         logger.LogInformation("Deleting walk with ID: {Guid}", id);
