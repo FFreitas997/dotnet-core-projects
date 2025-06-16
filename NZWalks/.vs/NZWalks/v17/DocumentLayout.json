@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\repositories\\implementations\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\repositories\\implementations\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,35 +36,22 @@
               "RelativeDocumentMoniker": "NZWalksAPI\\Program.cs",
               "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Program.cs",
               "RelativeToolTip": "NZWalksAPI\\Program.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAuwKYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:09:11.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\ImageRepository.cs",
-              "RelativeDocumentMoniker": "NZWalksAPI\\Repositories\\Implementations\\ImageRepository.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\ImageRepository.cs",
-              "RelativeToolTip": "NZWalksAPI\\Repositories\\Implementations\\ImageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T09:17:49.315Z",
+              "WhenOpened": "2025-06-16T11:19:21.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ImagesController.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Controllers\\ImagesController.cs",
-              "RelativeDocumentMoniker": "NZWalksAPI\\Controllers\\ImagesController.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Controllers\\ImagesController.cs",
-              "RelativeToolTip": "NZWalksAPI\\Controllers\\ImagesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "NZWalksAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA0wAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T09:13:13.907Z",
+              "WhenOpened": "2025-06-16T11:01:43.093Z",
               "EditorCaption": ""
             }
           ]

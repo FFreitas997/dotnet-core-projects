@@ -12,18 +12,22 @@ public class ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddlewa
         }
         catch (NotFoundException ex)
         {
+            logger.LogError(ex, "Resource not found: {Message}", ex.Message);
             await HandleExceptionAsync(context, StatusCodes.Status404NotFound, ex.Message);
         }
         catch (ValidationException ex)
         {
+            logger.LogError(ex, "Validation error: {Message}", ex.Message);
             await HandleExceptionAsync(context, StatusCodes.Status422UnprocessableEntity, ex.Message);
         }
         catch (BadRequestException ex)
         {
+            logger.LogError(ex, "Bad request: {Message}", ex.Message);
             await HandleExceptionAsync(context, StatusCodes.Status400BadRequest, ex.Message);
         }
         catch (UnauthorizedAccessAppException ex)
         {
+            logger.LogError(ex, "Unauthorized access: {Message}", ex.Message);
             await HandleExceptionAsync(context, StatusCodes.Status401Unauthorized, ex.Message);
         }
         catch (Exception ex)
