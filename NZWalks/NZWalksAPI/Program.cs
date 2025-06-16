@@ -2,6 +2,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using NZWalksAPI.Data;
@@ -15,6 +16,7 @@ using NZWalksAPI.Services.Interface;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+builder.Services.AddHttpContextAccessor();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -73,6 +75,7 @@ builder.Services.AddScoped<IWalkService, WalkService>();
 builder.Services.AddScoped<IRegionRepository, RegionRepositorySql>();
 builder.Services.AddScoped<IWalkRepository, WalkRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+builder.Services.AddScoped<IImageRepository, ImageRepository>();
 
 // AutoMapper configuration
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
@@ -141,6 +144,15 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
+// Use static files middleware to serve static files like images
+app.UseStaticFiles(
+    new StaticFileOptions
+    {
+        FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Storage")),
+        RequestPath = "/Storage"
+    }
+);
+
 // Add Middleware for global exception handling
 app.UseMiddleware<ExceptionMiddleware>();
 
@@ -152,4 +164,4 @@ await DbSeeder.SeedDifficultiesAsync(app.Services);
 // Seed user roles if they do not exist
 await DbSeeder.SeedUserRolesAsync(app.Services);
 
-app.Run();
+await app.RunAsync();
