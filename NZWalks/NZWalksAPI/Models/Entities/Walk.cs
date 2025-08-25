@@ -13,6 +13,6 @@ public class Walk
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     // Navigation properties
-    public Region Region { get; set; } = new Region();
-    public Difficulty Difficulty { get; set; } = new Difficulty();
+    public Region? Region { get; set; }
+    public Difficulty? Difficulty { get; set; }
 }

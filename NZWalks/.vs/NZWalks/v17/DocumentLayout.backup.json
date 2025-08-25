@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\repositories\\implementations\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\repositories\\implementations\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\repositories\\implementations\\walkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\repositories\\implementations\\walkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\repositories\\implementations\\regionrepositorysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\repositories\\implementations\\regionrepositorysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\repositories\\implementations\\regionrepositoryinmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\repositories\\implementations\\regionrepositoryinmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\services\\implementations\\walkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\services\\implementations\\walkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\models\\entities\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\models\\entities\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\services\\implementations\\regionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\services\\implementations\\regionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\models\\dtos\\walkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\models\\dtos\\walkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\franc\\onedrive\\ambiente de trabalho\\projects\\dotnet-core-projects\\nzwalks\\nzwalksapi\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1959E82B-1905-4992-A9D6-3603B98BCEE5}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,16 +70,148 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Program.cs",
-              "RelativeDocumentMoniker": "NZWalksAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Program.cs",
-              "RelativeToolTip": "NZWalksAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "NZWalksAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\appsettings.json",
+              "RelativeToolTip": "NZWalksAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T15:24:11.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegionRepositorySql.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\RegionRepositorySql.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Repositories\\Implementations\\RegionRepositorySql.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\RegionRepositorySql.cs",
+              "RelativeToolTip": "NZWalksAPI\\Repositories\\Implementations\\RegionRepositorySql.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:51:28.908Z",
+              "WhenOpened": "2025-07-03T15:39:53.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegionRepositoryInMemory.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\RegionRepositoryInMemory.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Repositories\\Implementations\\RegionRepositoryInMemory.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\RegionRepositoryInMemory.cs",
+              "RelativeToolTip": "NZWalksAPI\\Repositories\\Implementations\\RegionRepositoryInMemory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T15:39:50.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Walk.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\Entities\\Walk.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Models\\Entities\\Walk.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\Entities\\Walk.cs",
+              "RelativeToolTip": "NZWalksAPI\\Models\\Entities\\Walk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:16:44.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "NZWalksAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:16:42.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WalkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\WalkRepository.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Repositories\\Implementations\\WalkRepository.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\WalkRepository.cs",
+              "RelativeToolTip": "NZWalksAPI\\Repositories\\Implementations\\WalkRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwBQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:14:04.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WalkService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\WalkService.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Services\\Implementations\\WalkService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\WalkService.cs",
+              "RelativeToolTip": "NZWalksAPI\\Services\\Implementations\\WalkService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:06:19.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WalkDto.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\DTOs\\WalkDto.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Models\\DTOs\\WalkDto.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Models\\DTOs\\WalkDto.cs",
+              "RelativeToolTip": "NZWalksAPI\\Models\\DTOs\\WalkDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:18:32.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WalksController.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Controllers\\WalksController.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Controllers\\WalksController.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Controllers\\WalksController.cs",
+              "RelativeToolTip": "NZWalksAPI\\Controllers\\WalksController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T15:48:55.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Controllers\\RegionsController.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "NZWalksAPI\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T15:48:52.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\TokenRepository.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Repositories\\Implementations\\TokenRepository.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Repositories\\Implementations\\TokenRepository.cs",
+              "RelativeToolTip": "NZWalksAPI\\Repositories\\Implementations\\TokenRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA6wBYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T14:15:57.925Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegionService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Ambiente de Trabalho\\projects\\dotnet-core-projects\\NZWalks\\NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "RelativeToolTip": "NZWalksAPI\\Services\\Implementations\\RegionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T09:08:44.344Z"
             }
           ]
         }
