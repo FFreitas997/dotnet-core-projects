@@ -1,0 +1,278 @@
+# O que é o Azure Cosmos DB ?
+
+#  
+
+#  	- O Azure Cosmos DB é um serviço de banco de dados NoSQL rápido para desenvolvimento de aplicativos
+
+#  	modernos e de IA em qualquer escala.
+
+# 
+
+# O que é um banco de dados NoSQL ?
+
+# 
+
+#  	- Os desenvolvedores precisam de novos tipos de bancos de dados que possam enfrentar os desafios
+
+#  	exclusivos dos aplicativos modernos. Os bancos de dados NoSQL foram projetados para atender
+
+#  	a necessidades como:
+
+# 
+
+#  		. Grandes volumes de dados.
+
+#  		. Dados com muitas fontes e formas diferentes.
+
+#  		. Esquemas de dados dinâmicos que armazenam diferentes tipos de dados.
+
+#  		. Usando dados de alta velocidade e/ou em tempo real.
+
+# 
+
+#  	- Geralmente são projetados para serem dimensionados horizontalmente por meio de fragmentação ou
+
+#  	particionamento, o que lhes permite manter o alto desempenho, independentemente do tamanho
+
+# 
+
+# O Azure Cosmos DB para NoSQL tem algumas vantagens, tais como:
+
+# 
+
+#  	- Banco de dados vetorial líder do setor com indexação vetorial e pesquisa projetada
+
+#  	para lidar com vetores de alta dimensão, permitindo uma pesquisa vetorial eficiente e
+
+#  	precisa em qualquer escala.
+
+# 
+
+#  	- Velocidade garantida em qualquer escala , mesmo através de explosões, com elasticidade instantânea
+
+#  	e ilimitada, leituras rápidas e gravações multimestres, em qualquer lugar do mundo.
+
+# 
+
+#  	- Desenvolvimento rápido e flexível de aplicativos com SDKs para linguagens e estruturas populares,
+
+#  	como .NET, Java, Python, JavaScript e GO, bem como análises sem ETL (extrair, transformar, carregar).
+
+# 
+
+#  	- Pronto para aplicativos de missão crítica com continuidade de negócios garantida, disponibilidade
+
+#  	de 99,999% e segurança de nível empresarial.Totalmente gerenciado e econômico com uma oferta sem
+
+#  	servidor com todos os recursos, bem como dimensionamento instantâneo, automático e dinâmico que
+
+#  	responde às necessidades do aplicativo.
+
+# 
+
+# O Azure Cosmos DB para NoSQL é especialmente adequado para aplicativos que:
+
+# 
+
+#  	- Experimente picos e quedas imprevisíveis no tráfego
+
+#  	- Gere muitos dados
+
+#  	- Necessidade de oferecer experiências de usuário em tempo real
+
+#  	- São dependentes para a continuidade dos negócios
+
+# 
+
+# Quais são os componentes do Azure Cosmos DB para NoSQL ?
+
+# 
+
+#  	- Contas: unidades fundamentais de alta disponibilidade e isolamento de locatário para aplicativos
+
+#  	SaaS. No nível da conta, você pode configurar a(s) região(ões) para seus dados no Azure Cosmos DB
+
+#  	para NoSQL. As contas também contêm o nome DNS globalmente exclusivo usado para solicitações de API.
+
+#  
+
+#  	- Base de dados: Cada conta pode conter um ou mais bancos de dados. Um banco de dados é uma unidade
+
+#  	lógica de gerenciamento para contêineres no Azure Cosmos DB para NoSQL.
+
+#  
+
+#  	- Contentores: Os contêineres são a unidade fundamental de escalabilidade no Azure Cosmos DB para
+
+#  	NoSQL. Com o Azure Cosmos DB, você provisiona a taxa de transferência no nível do contêiner.
+
+#  	Opcionalmente, você também pode configurar uma política de indexação ou um valor
+
+#  	padrão de tempo de vida útil no nível do contêiner. O Azure Cosmos DB para NoSQL particionará os
+
+#  	dados em um contêiner de forma automática e transparente.
+
+#  
+
+#  	- ITENS: documentos individuais no formato JSON. O Azure Cosmos DB para NoSQL suporta nativamente
+
+#  	ficheiros JSON e pode fornecer um desempenho rápido e previsível porque as operações de escrita
+
+#  	em documentos JSON são atómicas.
+
+#  
+
+#  	- PARTICIONAMENTO \& CHAVES DE PARTIÇÃO: Cada contêiner do Azure Cosmos DB para NoSQL é necessário
+
+#  	para especificar um caminho de chave de partição que é usado para distribuir dados para expansão.
+
+#  	Nos bastidores, o Azure Cosmos DB para NoSQL usa esse caminho para particionar logicamente dados
+
+#  	usando valores de chave de partição.
+
+# 
+
+# Alguns use cases do uso do azure cosmos DB ?
+
+# 
+
+# 
+
+# Request Unit (RUs) (CPU, IOPS, Memory)
+
+# 
+
+# Throughput (Unidade RUs) - Quantidade de pedidos que a base de dados consegue lidar por segundo
+
+# 
+
+# Podes definir o Throughput ao nivel do contentor ou da base de dados.
+
+# 
+
+# Horizontal Scalable
+
+# 
+
+#  	- When physycal machine reacches his maiximum capcity, azure will use another psycyal machine for the same container
+
+# 
+
+# Partition and Partition key
+
+#  
+
+#  	- Multiple partions can reside inside of a machine, but one partition cannot reside inside of multiple machines
+
+# 
+
+# Single partition vs cross partition
+
+# 
+
+#  	- Single partition: Retreive info through a query based on the partition key (select \* from c where c.partition\_key = ?)
+
+#  		. Faster because it doesn´t require to search in different partitions.
+
+#  
+
+#  	- Cross partition: Retreive info through a query based on no partition key (select \* from c where c.partition\_no\_key = ?)
+
+#  		. Slow because it require to search in different partitons to get the info.
+
+# 
+
+# Avoid hot partition
+
+#  	- A partition with a lot of demmand requires to be separeted in others small logical partitions.
+
+# 
+
+# Time-to-live (TTL)
+
+#  	- Azure cosmos db allows you to set the length of time documents line in the database before being automatically purged.
+
+#  	- Measured in seconds from last modification.
+
+#  	- Set at container level or item level. Item level only possible through programing with "On (no default)"
+
+#  	- Deletion delay when there is not enough RU's because it consumes only leftovers RU's. After the TTL, document cannot be read.
+
+#  
+
+# 
+
+#  	-Benefeits:
+
+#  		. Save cost
+
+#  		. Improve performance
+
+#  		. Enforce data retention policy
+
+#  		. Auto delete older data
+
+# 
+
+# Serverless vs Provisioned throughput
+
+# 
+
+#  	Serveless
+
+# 
+
+#  		- Consumption-based model (Pay as you go)
+
+#  		- Great for unpredictable and low traffic
+
+#  		- Doesn't require any planned RU's
+
+#  		- Runs in a single region.
+
+#  		- Store only 50GB data in container
+
+# 
+
+#  	Provisioned throughput
+
+#  
+
+#  		- Predictable traffic
+
+#  		- RU's in advance
+
+#  		- Unlimited number of Azure regions
+
+#  		- Store Unlimited data in container
+
+# 
+
+# Autoscale vs Standard throughput
+
+# 
+
+#  	Autoscale
+
+# 
+
+#  		- Unpredictable traffic
+
+#  		- You set the maximum RU's and minimum will be set 10% of maximum when there are zero requests.
+
+#  		- Ideal for scenarios where the team cannot predict throughput needs or otherwise use the max throughtput amount for < 66% of hours per 		month
+
+#  
+
+# 
+
+#  	Standard throughput
+
+# 
+
+#  		- Suited for steady traffic
+
+#  		- Requires static amount of RU's
+
+#  		- Ideal for scenarios where the full RU's set is consumed for > 66% of hours per month
+
